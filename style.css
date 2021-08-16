@@ -36,7 +36,7 @@ body {
 
 .containerButton li {
   display: inline-block;
-  padding: 25px;
+  padding: 30px;
 }
 
 .containerButton{
@@ -50,6 +50,6 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 15px;
-  padding: 20px 0px;
+  padding: 10px,10px;
   font-family: "Roboto", sans-serif;
 }
