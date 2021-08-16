@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winc Film Zoeker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="style.css">
-    <script defer type="text/javascript" src="lijstMovies.js"></script>
-    <script defer type="text/javascript" src="script.js"></script>
-    <title>Welkom bij de winc Filmzoeker</title>
-</head>
-<body>
-    <header>
-        <h1>Welkom bij de winc Filmzoeker</h1>
-    </header>
-    <nav>
+    <script defer type="text/javascript" src="javascript/movies.js"></script>
+    <script defer type="text/javascript" src="javascript/script.js"></script>
+  </head>
+  <body>
+    <header class="header">Welkom bij Winc Filmzoeker</header>
 
-        <input type="radio" id="alle" name="filter" value="alle" checked="checked">
-        <label for="alle">Alle films</label>
-        <input type="radio" id="nieuwste" name="filter" value="nieuwste">
-        <label for="nieuwste">Nieuwste films</label>
-        <input type="radio" id="avengers" name="filter" value="avengers">
-        <label for="Avengers">Avengers films</label>
-        <input type="radio" id="xmen" name="filter" value="xmen">
-        <label for="X-men">X-men films</label>
-        <input type="radio" id="princess" name="filter" value="princess">
-        <label for="Princess">Princess films</label>
-        <input type="radio" id="batman" name="filter" value="batman">
-        <label for="Batman">Batman films</label>
+    <nav class="containerButton">
+      <li>
+        <input type="radio" id="latestMovies" name="filmFilter" value="latest"/>
+        <label for="latestMovies">Nieuwste films</label>
+      </li>
 
-        <span id="search">Zoeken:<input type="text" id="searchfield"></span>
+      <li>
+        <input type="radio" id="avengers" name="filmFilter" value="avengers"/>
+        <label for="avengers">Avengers</label>
+      </li>
 
+      <li>
+        <input type="radio" id="x-men" name="filmFilter" value="x-men"/>
+        <label for="x-men">X-men</label>
+      </li>
+
+      <li>
+        <input type="radio" id="princess" name="filmFilter" value="princess"/>
+        <label for="princess">Princess</label>
+      </li>
+
+      <li>
+        <input type="radio" id="batman" name="filmFilter" value="batman"/>
+        <label for="batman">Batman</label>
+      </li>
     </nav>
-<div>
-    <ul id="Films"></ul>
-</div>
 
-<footer>
-    copyricht Stefan Nieuwenburg
-</footer>
-</body>
+    <main>
+      <ul id="imdbMovies"></ul>
+    </main>
+
+    <footer class="footer">
+      copyricht Stefan Nieuwenburg
+    </footer>
+  </body>
 </html>
