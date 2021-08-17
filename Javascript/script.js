@@ -6,7 +6,7 @@ function addMoviesToDom(movies) {
   //lijst leeg maken:
   movieList.innerHTML = " ";
 
-  //  Door alle movies zoeken en Li's maken:
+  //  Door alle movies zoeken en Li's maken met .forEach:
   movies.forEach((movie) => {
     const listItem = document.createElement("li");
     const newImage = document.createElement("img");
@@ -24,7 +24,7 @@ function addMoviesToDom(movies) {
 
 addMoviesToDom(movies);
 
-// Functie radionbuttons:
+// Functie radionbuttons met event:
 function addEventListeners() {
   const radioButtons = document.getElementsByName("filmFilter");
   radioButtons.forEach((radioButton) => {
